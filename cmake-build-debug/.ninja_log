@@ -1,0 +1,11 @@
+# ninja log v5
+90	5490	7346905497552125	CMakeFiles/untitled.dir/main.cpp.obj	a65fbc80358955fa
+15	1046	7347143355963551	build.ninja	dcaac9d5b456f40b
+31	1239	7345970824463193	CMakeFiles/untitled.dir/CodeForces_ProblemSet/Problem1157B.cpp.obj	e8825a491344b30e
+70	956	7346245297927470	CMakeFiles/untitled.dir/CodeForces_ProblemSet/Problem466A.cpp.obj	a5b53c2fec7c1baf
+5491	6696	7346905509015891	untitled.exe	c990e7df0104a5e5
+21	1130	7345220121598193	CMakeFiles/untitled.dir/CodeForces_ProblemSet/problem545D.cpp.obj	add49ee43db7d49e
+26	1015	7345159013529808	CMakeFiles/untitled.dir/CodeForces_ProblemSet/Problem1409D.cpp.obj	cccd448f6a72b13b
+17	1089	7345185347611864	CMakeFiles/untitled.dir/CodeForces_ProblemSet/Problem703A.cpp.obj	1cccddc885a7b1b4
+1259	5183	7346905494525472	CMakeFiles/untitled.dir/CodeForces_ProblemSet/Problem893C.cpp.obj	4fb2c352ac7449cc
+32	2060	7347144628041895	CMakeFiles/untitled.dir/AtCoder/Beginner_Contest_349/A.cpp.obj	f235f3026db35337
