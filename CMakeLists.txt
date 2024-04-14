@@ -39,4 +39,11 @@ add_executable(untitled main.cpp
         CodeForces_ProblemSet/Problem893C.h
         LeetCode_ProblemSet/Problem443.h
         LeetCode_ProblemSet/Array/Problem1768.h
-        AtCoder/Beginner_Contest_349/A.cpp)
+        AtCoder/Beginner_Contest_349/A.cpp
+        CodeForces_ProblemSet/Problem1373C.h
+        LeetCode_ProblemSet/Problem8.h
+        AtCoder/Beginner_Contest_349/B.cpp
+        AtCoder/Beginner_Contest_349/B.cpp
+        AtCoder/Beginner_Contest_349/C.cpp
+        AtCoder/Beginner_Contest_349/C.cpp
+        CodeForces_ProblemSet/Problem1373C.cpp)
