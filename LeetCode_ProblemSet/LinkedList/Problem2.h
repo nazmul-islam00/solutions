@@ -57,7 +57,7 @@ public:
         }
         if(carry)
             sums.push_back(carry);
-        vector<ListNode*> answer(sums.size());
+        std::vector<ListNode*> answer(sums.size());
         for(int i = 0; i < sums.size(); i++) {
             answer[i] = new ListNode(sums[i]);
         }
