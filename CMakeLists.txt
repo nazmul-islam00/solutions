@@ -50,4 +50,5 @@ add_executable(untitled main.cpp
         AtCoder/Beginner_Contest_348/B.h
         AtCoder/Beginner_Contest_348/C.h
         CodeForces_ProblemSet/Problem1303B.h
+        LeetCode_ProblemSet/Problem867.h
 )
