@@ -1,4 +1,4 @@
-#include "CodeForces_ProblemSet/Problem352B.h"
+#include "CodeForces_ProblemSet/Problem1303B.h"
 
 int main() {
     Solution main;
