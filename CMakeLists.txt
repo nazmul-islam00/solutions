@@ -43,12 +43,13 @@ add_executable(untitled main.cpp
         AtCoder/Beginner_Contest_349/C.cpp
         LeetCode_ProblemSet/Problem14.h
         CodeForces_ProblemSet/Problem352B.h
-        LeetCode_ProblemSet/Problem404.h
+        LeetCode_ProblemSet/Tree/Problem404.h
         LeetCode_ProblemSet/Problem20.h
-        LeetCode_ProblemSet/Problem129.h
+        LeetCode_ProblemSet/Tree/Problem129.h
         AtCoder/Beginner_Contest_348/A.h
         AtCoder/Beginner_Contest_348/B.h
         AtCoder/Beginner_Contest_348/C.h
         CodeForces_ProblemSet/Problem1303B.h
         LeetCode_ProblemSet/Problem867.h
+        LeetCode_ProblemSet/Tree/Problem623.h
 )
