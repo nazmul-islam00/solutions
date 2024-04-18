@@ -64,4 +64,5 @@ add_executable(untitled main.cpp
         CodeForces_ProblemSet/Problem1203E.h
         CodeForces_ProblemSet/Problem845C.h
         LeetCode_ProblemSet/Problem860.h
+        LeetCode_ProblemSet/Problem611.h
 )
