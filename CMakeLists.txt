@@ -89,4 +89,13 @@ add_executable(untitled main.cpp
         LeetCode_ProblemSet/Problem92.h
         LeetCode_ProblemSet/Problem19.h
         LeetCode_ProblemSet/Problem21.h
+        LeetCode_ProblemSet/LinkedList/Problem23.h
+        LeetCode_ProblemSet/LinkedList/Problem19.h
+        LeetCode_ProblemSet/LinkedList/Problem21.h
+        LeetCode_ProblemSet/LinkedList/Problem25.h
+        LeetCode_ProblemSet/LinkedList/Problem817.h
+        LeetCode_ProblemSet/LinkedList/Problem92.h
+        LeetCode_ProblemSet/LinkedList/Problem206.h
+        LeetCode_ProblemSet/LinkedList/Problem234.h
+        LeetCode_ProblemSet/LinkedList/Problem237.h
 )
