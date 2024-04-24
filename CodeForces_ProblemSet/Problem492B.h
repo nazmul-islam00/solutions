@@ -25,7 +25,3 @@ public:
     }
 };
 
-int main() {
-    Solution main;
-    main.run();
-}
