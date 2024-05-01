@@ -55,7 +55,9 @@ public:
              * & flip the correspnding bit
              * but don't assign the changed mask to mask
              * find the mask
-             * if it was found then the intermediate substr is a wonderful string
+             * if it was found then every occurence of the mask
+             * differs from the current mask by exactly one bit which is odd
+             * thus every such occurence corresponds to a valid wonderful string with jth bit as odd
              * else add nothing
              */
             for(int j = 0; j < 10; j++) {
