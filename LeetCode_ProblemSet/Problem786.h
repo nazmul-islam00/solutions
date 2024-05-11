@@ -13,7 +13,7 @@ public:
     std::vector<int> kthSmallestPrimeFraction(std::vector<int>& arr, int k) {
         std::vector<std::pair<long double, std::pair<int, int>>> fractions;
         for(int i = 0; i < arr.size() - 1; i++) {
-            for(int j = 0; j < arr.size(); j++) {
+            for(int j = i + 1; j < arr.size(); j++) {
                 fractions.push_back({(long double)arr[i] / (long double)arr[j], {arr[i], arr[j]}});
             }
         }
