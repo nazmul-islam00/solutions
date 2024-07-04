@@ -10,7 +10,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        start, end = head, head
+        start, end = head, head.next
         temp = None
         sum = 0
         
@@ -26,7 +26,6 @@ class Solution(object):
             end = end.next
             
         temp.next = None
-        head = head.next
         
         return head
         
