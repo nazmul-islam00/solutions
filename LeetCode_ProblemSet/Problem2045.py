@@ -23,7 +23,7 @@ class Solution(object):
     def get_time(self, dist, time, change):
         cur_time = 0
         
-        for idx in range(1, dist + 1):
+        for _ in range(1, dist + 1):
             turn = floor(cur_time / change)
             
             if turn % 2 == 0:
