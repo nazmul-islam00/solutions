@@ -1,3 +1,5 @@
+from string import ascii_lowercase
+
 class Solution(object):
     inf = 10e8
     
@@ -14,17 +16,21 @@ class Solution(object):
         return self.find_cost(source, target, costs)
     
     def floyd_warshall(self, original, changed, cost):
-        costs = [[self.inf for _ in range(26)] for _ in range(26)]
+        costs = {
+            ch1: {
+                ch2: self.inf for ch2 in ascii_lowercase
+            } for ch1 in ascii_lowercase
+        }
         
-        for i in range(26):
-            costs[i][i] = 0
+        for ch in ascii_lowercase:
+            costs[ch][ch] = 0
             
         for i in range(len(original)):
-            costs[original[i] - 'a'][changed[i] - 'a'] = cost[i]
+            costs[original[i]][changed[i]] = min(cost[i], costs[original[i]][changed[i]])
             
-        for intermediate in range(26):
-            for ch1 in range(26):
-                for ch2 in range(26):
+        for intermediate in ascii_lowercase:
+            for ch1 in ascii_lowercase:
+                for ch2 in ascii_lowercase:
                     costs[ch1][ch2] = min(
                         costs[ch1][ch2],
                         costs[ch1][intermediate] + costs[intermediate][ch2]
