@@ -11,6 +11,11 @@ class Solution(object):
         :type change: int
         :rtype: int
         """
+        # run bfs storing two distances per node
+        # if no distance has been set for cur node, set to dis + 1
+        # else check if dis + 1 is the same as the first distance,
+        # if true, don't set and continue
+        # else set dis + 1
         adj = self.get_adj(n, edges)
         dist = self.get_dist(n, adj)
         return self.get_time(dist, time, change)
