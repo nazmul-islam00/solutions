@@ -2,7 +2,7 @@ package main
 
 func intersection(nums1 []int, nums2 []int) []int {
     nums := map[int]bool{}
-	commons := map[int]bool {}
+	commons := map[int]bool{}
 	ans := []int{}
 	for _, num := range nums2 {
 		nums[num] = true
