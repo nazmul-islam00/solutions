@@ -25,7 +25,7 @@ func evalRPN(tokens []string) int {
 }
 
 func eval(token1, token2, op string) string {
-	val1, _ := (strconv.ParseInt(token1, 10, 32))
+	val1, _ := strconv.ParseInt(token1, 10, 32)
 	val2, _ := strconv.ParseInt(token2, 10, 32)
 	switch op {
 	case "+": return strconv.Itoa(int(val1) + int(val2))
