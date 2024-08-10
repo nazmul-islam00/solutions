@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Solution(object):
     def regionsBySlashes(self, grid):
         """
