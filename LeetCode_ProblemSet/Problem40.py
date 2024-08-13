@@ -16,6 +16,7 @@ class Solution(object):
             answer.append(path)
             return 
         for i in range(idx, len(candidates)):
+            # igonre calls for the same elements
             if i > idx and candidates[i] == candidates[i - 1]:
                 continue
             self.backtrack(candidates, target - candidates[i], i + 1, path + [candidates[i]], answer)
