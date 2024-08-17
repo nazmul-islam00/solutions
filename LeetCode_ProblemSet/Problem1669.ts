@@ -10,15 +10,6 @@
  * }
  */
 
-class ListNode {
-    val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
-        this.val = (val===undefined ? 0 : val)
-        this.next = (next===undefined ? null : next)
-    }
-}
-
 function mergeInBetween(list1: ListNode | null, a: number, b: number, list2: ListNode | null): ListNode | null {
     let list2_head: ListNode | null = list2, list2_tail: ListNode | null = list2;
     while (list2_tail.next !== null) {
