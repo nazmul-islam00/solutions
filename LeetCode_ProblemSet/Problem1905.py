@@ -29,20 +29,23 @@ class Solution(object):
         
         for row in range(m):
             for col in range(n):
-                if grid[row][col] == 1:
-                    island = [(row, col)]
-                    grid[row][col] = 0
-                    q.append((row, col))
+                if grid[row][col] == 0:
+                    continue
                     
-                    while len(q) > 0:
-                        r, c = q.popleft()
-                        for n_r, n_c in self.getNeighbors(r, c, m, n):
-                            if grid[n_r][n_c] == 1:
-                                grid[n_r][n_c] = 0
-                                island.append((n_r, n_c))
-                                q.append((n_r, n_c))
-                                
-                    islands.append(island)
+                island = [(row, col)]
+                grid[row][col] = 0
+                q.append((row, col))
+                
+                while len(q) > 0:
+                    r, c = q.popleft()
+                    for n_r, n_c in self.getNeighbors(r, c, m, n):
+                        if grid[n_r][n_c] == 0:
+                            continue
+                        grid[n_r][n_c] = 0
+                        island.append((n_r, n_c))
+                        q.append((n_r, n_c))
+                            
+                islands.append(island)
                                 
         return islands
                         
