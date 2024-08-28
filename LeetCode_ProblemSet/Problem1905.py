@@ -17,6 +17,7 @@ class Solution(object):
             for x, y in island:
                 if grid[x][y] == 0:
                     isSubIsland = False
+                    break
             if isSubIsland:
                 count += 1
         return count
