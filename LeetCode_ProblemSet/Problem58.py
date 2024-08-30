@@ -4,5 +4,5 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        return len(filter(lambda x: len(x) > 0, s.split(" "))[-1])
+        return len(s.strip().split(" ")[-1])
         
