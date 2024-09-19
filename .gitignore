@@ -3,3 +3,12 @@ cmake-build-debug
 *.exe
 .vscode
 *.mod
+*.log
+*.txt
+*.vcxproj
+*.tlog
+*.recipe
+*.obj
+*.cmake
+*.list
+*.bin
