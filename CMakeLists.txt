@@ -180,4 +180,8 @@ add_executable(untitled main.cpp
         CodeForces_ProblemSet/971-4/A.cpp
         CodeForces_ProblemSet/971-4/B.cpp
         CodeForces_ProblemSet/971-4/C.cpp
+        LeetCode_ProblemSet/Problem1331.cpp
+        LeetCode_ProblemSet/Problem1046.cpp
+        LeetCode_ProblemSet/Problem1054.cpp
+        LeetCode_ProblemSet/Problem703.cpp
 )
