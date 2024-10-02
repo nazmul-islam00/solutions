@@ -7,7 +7,10 @@ public:
     std::vector<int> arrayRankTransform(std::vector<int>& arr) {
         int cur = INT32_MIN;
         int rank = 0;
-        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>> heap;
+        std::priority_queue<
+            std::pair<int, int>, 
+            std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>
+        > heap;
         for (int i = 0; i < arr.size(); i++) {
             heap.push({arr[i], i});
         }
