@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.28)--
 project(untitled)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -207,4 +207,5 @@ add_executable(untitled main.cpp
         LeetCode_ProblemSet/Problem1963.cpp
         LeetCode_ProblemSet/Problem921.cpp
         LeetCode_ProblemSet/Problem962.cpp
+        LeetCode_ProblemSet/Problem1942.cpp
 )
