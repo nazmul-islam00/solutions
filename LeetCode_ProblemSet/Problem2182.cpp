@@ -36,7 +36,6 @@ public:
                 count[ch2]--;
 
                 if (!count[ch2]) pq.pop();
-                
             }
         }
          
