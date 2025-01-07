@@ -6,9 +6,10 @@ class Trie {
 private:
     struct TrieNode {
         int frequency;
+        bool isLast;
         std::unordered_map<char, TrieNode*> children;
 
-        TrieNode() : frequency(1) {}
+        TrieNode() : frequency(1), isLast(false) {}
     };
 
 private:
@@ -42,6 +43,8 @@ private:
                 curr = curr->children[c];
             }
         } 
+
+        curr->isLast = true;
     }
 
     TrieNode* getLastTrieNode(TrieNode* root, const std::string& word) {
@@ -55,14 +58,7 @@ private:
 
     bool searchHelper(TrieNode* root, const std::string& word) {
         TrieNode* lastTrieNode = getLastTrieNode(root, word);
-        if (lastTrieNode == nullptr) return false;
-        int frequencySum = 0;
-
-        for (std::unordered_map<char, TrieNode*>::iterator it = lastTrieNode->children.begin(); it != lastTrieNode->children.end(); it++) {
-            frequencySum += it->second->frequency;
-        }
-
-        return lastTrieNode->frequency > frequencySum;
+        return lastTrieNode != nullptr && lastTrieNode->isLast;
     }
 
     bool startsWithHelper(TrieNode* root, const std::string& word) {
