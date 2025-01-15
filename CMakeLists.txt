@@ -245,4 +245,5 @@ add_executable(untitled main.cpp
         LeetCode_ProblemSet/Problem2116.cpp
         LeetCode_ProblemSet/Problem3223.cpp
         LeetCode_ProblemSet/Problem2657.cpp
+        LeetCode_ProblemSet/Problem2429.cpp
 )
