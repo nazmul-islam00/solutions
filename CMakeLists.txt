@@ -303,4 +303,5 @@ add_executable(untitled main.cpp
         LeetCode_ProblemSet/NeetCode_150/Products_of_Array_Except_Self.cpp
         LeetCode_ProblemSet/NeetCode_150/Valid_Sudoku.cpp
         LeetCode_ProblemSet/NeetCode_150/Longest_Consecutive_Sequence.cpp
+        LeetCode_ProblemSet/Problem1780.cpp
 )
