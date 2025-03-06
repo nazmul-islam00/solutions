@@ -305,4 +305,5 @@ add_executable(untitled main.cpp
         LeetCode_ProblemSet/NeetCode_150/Longest_Consecutive_Sequence.cpp
         LeetCode_ProblemSet/Problem1780.cpp
         LeetCode_ProblemSet/Problem2579.cpp
+        LeetCode_ProblemSet/Problem2965.cpp
 )
