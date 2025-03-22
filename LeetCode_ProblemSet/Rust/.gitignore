@@ -1,0 +1,24 @@
+# Ignore compiled Rust binaries and artifacts
+/target/
+/debug/
+/release/
+
+# Ignore Cargo-related files
+Cargo.lock
+**/Cargo.lock
+/.cargo/
+/rust-toolchain
+/.rustup/
+/Cargo.toml.orig
+
+# Ignore Rust test and benchmark artifacts
+/tests/**/target/
+/benches/**/target/
+
+# Ignore editor and IDE files
+**/*.rs.bk
+*.swp
+*.swo
+/.idea/
+/.vscode/
+/*.iml
