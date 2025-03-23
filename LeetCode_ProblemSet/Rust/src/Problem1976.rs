@@ -36,11 +36,15 @@ impl Solution {
 
         while !st.is_empty() {
             let p = st.pop();
-            let node;
+            let (cost, node);
             match p {
                 None => break,
-                Some(p) => node = p.1,
+                Some(p) => (cost, node) = p,
             };
+
+            if cost > dis[node as usize] {
+                continue;
+            }
 
             for adj_node in 0..adj.len() {
                 let wt = adj[node as usize][adj_node];
