@@ -3,15 +3,17 @@ use std::collections::HashMap;
 impl Solution {
     pub fn minimum_index(nums: Vec<i32>) -> i32 {
         let mut freq: HashMap<i32, i32> = HashMap::new();
+        let (mut dominant_element, mut cnt) = (-1, 0);
         for &num in &nums {
             *freq.entry(num).or_insert(0) += 1;
+            if freq[&num] > cnt {
+                (dominant_element, cnt) = (num, freq[&num]);
+            }
         }
-
-        let (dominant_element, cnt) = freq.iter().max_by_key(|&(_, v)| v).unwrap();
 
         let mut pre: i32 = 0;
         for idx in 0..nums.len() - 1 {
-            if nums[idx] == *dominant_element {
+            if nums[idx] == dominant_element {
                 pre += 1;
             }
 
