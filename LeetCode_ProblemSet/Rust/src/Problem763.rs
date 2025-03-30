@@ -2,38 +2,21 @@ use std::cmp::max;
 
 impl Solution {
     pub fn partition_labels(s: String) -> Vec<i32> {
-        let mut answer: Vec<i32> = Vec::new();
-        let mut first_occurrences = vec![-1 as i32; 26];
-        let mut last_occurrences = vec![-1 as i32; 26];
+        let mut answer = Vec::new();
+        let mut last_occurrences = [0; 26];
 
-        for idx in 0..s.len() {
-            if first_occurrences[s.chars().nth(idx).unwrap() as usize - 'a' as usize] == -1 {
-                first_occurrences[s.chars().nth(idx).unwrap() as usize - 'a' as usize] = idx as i32;
-            }
-            last_occurrences[s.chars().nth(idx).unwrap() as usize - 'a' as usize] = idx as i32;
+        for (idx, c) in s.chars().enumerate() {
+            last_occurrences[c as usize - 'a' as usize] = idx;
         }
 
-        let mut idx = 0;
-        while idx < s.len() {
-            let mut max_last =
-                last_occurrences[s.chars().nth(idx).unwrap() as usize - 'a' as usize];
-            let mut init_max;
+        let (mut start, mut end) = (0, 0);
+        for (idx, c) in s.chars().enumerate() {
+            end = max(end, last_occurrences[c as usize - 'a' as usize]);
 
-            loop {
-                init_max = max_last;
-                for i in 0..26 {
-                    if first_occurrences[i] < max_last {
-                        max_last = max(max_last, last_occurrences[i]);
-                    }
-                }
-
-                if max_last == init_max {
-                    break;
-                }
+            if idx == end {
+                answer.push((end - start + 1) as i32);
+                start = idx + 1;
             }
-
-            answer.push(max_last - idx as i32 + 1);
-            idx = max_last as usize + 1;
         }
 
         return answer;
