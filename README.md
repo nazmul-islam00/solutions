@@ -1,6 +1,6 @@
 # Solutions Repository
 
-This repository contains solutions to various competitive programming problems from platforms such as AtCoder, CodeForces, LeetCode, and Project Euler.
+This repository contains solutions to various programming problems from platforms such as AtCoder, CodeForces, LeetCode, and Project Euler.
 
 ## Directory Structure
 
