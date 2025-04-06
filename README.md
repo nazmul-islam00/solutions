@@ -13,7 +13,7 @@ The solutions are written in **C++**, **C**, **Python**, **Go**, **Java**, and *
 
 ## Directory Structure
 
-```
+```bash
 solutions/
 ├── AtCoder/ # AtCoder problem solutions
 ├── CodeForces_ProblemSet/ # CodeForces problem solutions
