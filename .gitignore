@@ -12,3 +12,24 @@ cmake-build-debug
 *.cmake
 *.list
 *.bin
+
+# CMake build directory
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeOutput.log
+CMakeError.log
+
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.user
+*.filters
+
+# CMake generated stamps
+*.stamp
+*.rule
+*.depend
